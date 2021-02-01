@@ -1,4 +1,7 @@
 pipeline {
+    agent {
+        label agent1
+    }
     stages {
         stage('List folders') {
            steps {
