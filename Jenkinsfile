@@ -6,7 +6,7 @@ pipeline {
         stage('List folders') {
            steps {
               script {
-                 result = sh("whoami", returnStdout: true)
+                 result = sh(script:"whoami", returnStdout: true)
                  println result
              } 
           }
