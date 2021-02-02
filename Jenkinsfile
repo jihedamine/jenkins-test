@@ -11,7 +11,7 @@ pipeline {
                  println result
                  sh "whoami"
                  println "SSHing: " + sh(script:"ssh root@172.20.0.2 \"ls -al\"", returnStdout: true)
-                 sh "ssh root@172.20.0.2 \"ls -ltr\""
+                 sh "ssh root@172.20.0.2 \"ls -al\""
              } 
           }
         }
